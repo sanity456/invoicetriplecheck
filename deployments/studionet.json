@@ -1,0 +1,218 @@
+{
+  "contract": {
+    "abi_sha256": "0b19ebaea921c61e69967c3e9beb4091da31e488e4f510549ef95eca27a678e4",
+    "address": "0x7dF76B677258378afeE3999D7EE21F5B70af6955",
+    "deployed_source_sha256": "a03ebfb9d1f293d79591de2fc1ce9d10b43e322cc7420189087325cba61cd6cf",
+    "deployment_tx": "0x75266a7291346d230b28dc1cfdca4adc8051b604f05094d8458637f837a18e3f",
+    "execution_result": "SUCCESS",
+    "schema_method_count": 9,
+    "schema_readback_exact": true,
+    "source_readback_exact": true,
+    "source_sha256": "a03ebfb9d1f293d79591de2fc1ce9d10b43e322cc7420189087325cba61cd6cf",
+    "status": "FINALIZED"
+  },
+  "correction_basis": [
+    "leader substantive payload must be independently validated and bound to every derived hash, mask, or state field",
+    "registries and fixed capacity must be owner-scoped or safely reclaimable",
+    "submission evidence must resolve to this exact deployed source and full ABI"
+  ],
+  "network": {
+    "chain_id": 61999,
+    "explorer": "https://explorer-studio.genlayer.com",
+    "name": "studionet",
+    "rpc": "https://studio.genlayer.com/api"
+  },
+  "observed": {
+    "crosswalk_hash_recomputed_from_attached_maps": true,
+    "order": {
+      "buyer": "0x5F98A8f7B13056e9151f4fF6a699b9bAa116d6F3",
+      "closed_at": "2026-09-01T09:08:37.038875Z",
+      "created_at": "2026-09-01T09:05:47.188924Z",
+      "crosswalk_sha256": "sha256:375c655ceecf6310724821cdec1b3d5fb312fb350ceb11d6e1adc1f80f64a7c7",
+      "decision_note": "Buyer accepts this synthetic three-way reconciliation record.",
+      "invoice_lines": [
+        {
+          "description": "Blue archive storage boxes",
+          "id": "I1",
+          "quantity": 2,
+          "unit_price": 500
+        }
+      ],
+      "invoice_map": [
+        {
+          "invoice_id": "I1",
+          "po_id": "PO1"
+        }
+      ],
+      "invoice_reference": "synthetic-invoice",
+      "issues": [],
+      "order_id": "0x5f98a8f7b13056e9151f4ff6a699b9baa116d6f3:ORDER-1",
+      "po_lines": [
+        {
+          "description": "Blue archive storage boxes",
+          "id": "PO1",
+          "quantity": 2,
+          "unit_price": 500
+        }
+      ],
+      "receipt_lines": [
+        {
+          "description": "Blue archive storage boxes received",
+          "id": "R1",
+          "quantity": 2
+        }
+      ],
+      "receipt_map": [
+        {
+          "po_id": "PO1",
+          "receipt_id": "R1"
+        }
+      ],
+      "receipt_reference": "synthetic-receipt",
+      "receiver": "0x888A439A29c991dd6EF2d0c4e8641989fD8c6367",
+      "schema": "invoicetriplecheck/order/v2",
+      "source_reference": "synthetic-purchase-order",
+      "source_verified": false,
+      "state": "ACCEPTED",
+      "supplier": "0xEbfd4c79052D5BaA48Ee11eb8413B1a96E1B41d0"
+    }
+  },
+  "owner": "sanity456",
+  "repository": "invoicetriplecheck",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": "genlayer-intelligent-contract-correction/v4",
+  "supersedes": {
+    "address": "0x7ca12fC62B8ccFD897DF45Df79046a41A2623298",
+    "reason": "Superseded by the full validator-binding and registry-isolation audit",
+    "source_sha256": "f817356d30ae408f9ec7889c99da66fbbaa8ffe2c99e198838f5f841d2fc2863"
+  },
+  "transactions": {
+    "attest_receipt": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x0d5d61af05fe979290b3d3fc5641ee933886639e04f91db727e6f306e08cf6ce",
+      "status": "FINALIZED",
+      "tx_hash": "0x0d5d61af05fe979290b3d3fc5641ee933886639e04f91db727e6f306e08cf6ce",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "buyer_close": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xffa76fc730385696c5d698db74614b05a362b1aace52b34a23633efe2d4e6578",
+      "status": "FINALIZED",
+      "tx_hash": "0xffa76fc730385696c5d698db74614b05a362b1aace52b34a23633efe2d4e6578",
+      "validator_votes": [
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "create_order": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xe9cc2c249df82787063804f699a3af5a8363d10410bd5eb4ac044e4c9b8a08a8",
+      "status": "FINALIZED",
+      "tx_hash": "0xe9cc2c249df82787063804f699a3af5a8363d10410bd5eb4ac044e4c9b8a08a8",
+      "validator_votes": [
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "deploy": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x75266a7291346d230b28dc1cfdca4adc8051b604f05094d8458637f837a18e3f",
+      "status": "FINALIZED",
+      "tx_hash": "0x75266a7291346d230b28dc1cfdca4adc8051b604f05094d8458637f837a18e3f",
+      "validator_votes": [
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "reconcile_order": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x424d1d239cdb769cdd1c604a31f10c0c51f76b9a847d8c9f397ebb97ef53bb31",
+      "status": "FINALIZED",
+      "tx_hash": "0x424d1d239cdb769cdd1c604a31f10c0c51f76b9a847d8c9f397ebb97ef53bb31",
+      "validator_votes": [
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "submit_invoice": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x122bda38776eedca330635dd2a076c8cf669a040601a99afe93026a3e875e2de",
+      "status": "FINALIZED",
+      "tx_hash": "0x122bda38776eedca330635dd2a076c8cf669a040601a99afe93026a3e875e2de",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    }
+  },
+  "verification": {
+    "all_executions_succeeded": true,
+    "all_transactions_finalized": true,
+    "deployed_schema_exact": true,
+    "deployed_source_exact": true,
+    "latest_final_state_readback": true,
+    "leader_payload_injection_tests_passed": true,
+    "local_direct_test_count": 11,
+    "local_five_validator_test_count": 1,
+    "post_consensus_boundary_tests_passed": true,
+    "registry_isolation_tests_passed": false,
+    "synthetic_public_fixture": true
+  },
+  "verified_at": "2026-09-01T09:09:18.372466Z",
+  "wallet": {
+    "cross_repository_wallet_reused": false,
+    "external_encrypted_keystores": true,
+    "fresh_per_repository": true,
+    "other_owner_wallet_reused": false,
+    "owner": "sanity456",
+    "prior_address_overlap_count": 0,
+    "private_material_in_repository": false,
+    "repository": "invoicetriplecheck",
+    "roles": {
+      "deployer": "0x5F98A8f7B13056e9151f4fF6a699b9bAa116d6F3",
+      "role_a": "0x888A439A29c991dd6EF2d0c4e8641989fD8c6367",
+      "role_b": "0xEbfd4c79052D5BaA48Ee11eb8413B1a96E1B41d0",
+      "role_c": "0x4e40Df641EF92E3091c11e17f7562967f6368924"
+    },
+    "workspace_wallet_used": false
+  }
+}

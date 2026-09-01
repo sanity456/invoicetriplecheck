@@ -1,0 +1,157 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "attest_receipt": {
+      "params": [
+        [
+          "order_id",
+          "string"
+        ],
+        [
+          "receipt_json",
+          "string"
+        ],
+        [
+          "receipt_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "buyer_close": {
+      "params": [
+        [
+          "order_id",
+          "string"
+        ],
+        [
+          "accepted",
+          "bool"
+        ],
+        [
+          "decision_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "create_order": {
+      "params": [
+        [
+          "order_key",
+          "string"
+        ],
+        [
+          "receiver",
+          "address"
+        ],
+        [
+          "supplier",
+          "address"
+        ],
+        [
+          "po_json",
+          "string"
+        ],
+        [
+          "source_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_order": {
+      "params": [
+        [
+          "order_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_order_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_order_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "matches_reconciliation": {
+      "params": [
+        [
+          "order_id",
+          "string"
+        ],
+        [
+          "expected_state",
+          "string"
+        ],
+        [
+          "expected_hash",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    },
+    "reconcile_order": {
+      "params": [
+        [
+          "order_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "submit_invoice": {
+      "params": [
+        [
+          "order_id",
+          "string"
+        ],
+        [
+          "invoice_json",
+          "string"
+        ],
+        [
+          "invoice_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+Correction summary for ThreeWayLineMatch
+
+We applied the Boxcomplete result-binding finding and the Baggate registry-isolation finding across the full selected twelve-repository set, including this contract.
+
+What changed in this repository:
+The validator now canonicalizes the leader's actual PO-to-receipt and PO-to-invoice mappings, recomputes the crosswalk digest from those mappings, compares the full payload independently, and repeats that binding before reconciliation state is written.
+
+Release evidence:
+Current StudioNet address: 0x7dF76B677258378afeE3999D7EE21F5B70af6955
+Deployment transaction: 0x75266a7291346d230b28dc1cfdca4adc8051b604f05094d8458637f837a18e3f
+Source SHA-256: a03ebfb9d1f293d79591de2fc1ce9d10b43e322cc7420189087325cba61cd6cf
+Superseded address: 0x7ca12fC62B8ccFD897DF45Df79046a41A2623298
+
+The current Explorer deployment was read back after deployment and matched the repository source byte-for-byte. Its complete on-chain schema matched abi.json exactly. All recorded transactions finalized with successful execution, and the contract-specific final state was read back from StudioNet. Submission evidence must use only the current address and the commit-pinned deployment manifest; the superseded address is not active evidence.
